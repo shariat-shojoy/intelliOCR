@@ -1,0 +1,7 @@
+pdf2image
+easyocr
+jiwer
+pytesseract
+pillow
+tqdm
+opencv-python
