@@ -5,3 +5,5 @@ pytesseract
 pillow
 tqdm
 opencv-python
+websockets
+pymupdf

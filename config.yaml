@@ -1,0 +1,8 @@
+general_settings:
+  master_key: sk-local
+
+model_list:
+  - model_name: claude-3-5-sonnet
+    litellm_params:
+      model: ollama/qwen2.5-coder:14b
+      api_base: http://localhost:11434
