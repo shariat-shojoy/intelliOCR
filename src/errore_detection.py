@@ -5,8 +5,8 @@ import os
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
 IMAGES_DIR = "../images_preprocessed_denoised"  # your denoised images
-DICT_PATH = "../all_unique_bangla_words.txt"  # your unique Bangla words dictionary
-CONF_THRESHOLD = 70  # tune later
+DICT_PATH = "../bangla_academi_words.txt"  # your unique Bangla words dictionary
+CONF_THRESHOLD = 90  # tune later
 
 with open(DICT_PATH, encoding="utf-8") as f:
     BANGLA_DICT = set(line.strip() for line in f)
