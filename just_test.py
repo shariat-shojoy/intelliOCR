@@ -1,17 +1,9 @@
 import fitz
 
-doc = fitz.open("WB_BANGLA_ACADEMY_WORD_LIST.pdf")
+doc = fitz.open("WB_BANGLA_ACADEMY_WORD_LIST-3-4.pdf")
 
-page = doc[0]
+page = doc[1]
 
-print("========== get_text() ==========")
-print(page.get_text()[:2000])
+pix = page.get_pixmap(dpi=600)
 
-print("\n========== get_text('words') ==========")
-words = page.get_text("words")
-print("Number of words:", len(words))
-
-if words:
-    print(words[:20])
-
-doc.close()
+pix.save("first_page2.png")
